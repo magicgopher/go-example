@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-// go数据类型有数值型、浮点型、布尔型、复数型、字节型、字符串型
+// go基本类型有布尔型、数值型（整数型、浮点型、复数型）、字符串型、字节型、rune
 
 func main() {
-	// 数值类型
-	fmt.Println("数值类型-无符号位")
+	// 数值类型（整数型）
+	fmt.Println("数值类型-整数型-无符号位")
 	// 无符号整数位
 	var n1 uint = 100
 	var n2 uint8 = 255
@@ -19,7 +19,7 @@ func main() {
 	fmt.Println("uint32类型变量n4的值是:", n4)
 	fmt.Println("uint64类型变量n5的值是:", n5)
 	fmt.Println("============")
-	fmt.Println("数值类型-无符号位")
+	fmt.Println("数值类型-整数型-无符号位")
 	// 有符号整数位
 	var n6 int = -100
 	var n7 int8 = -128
