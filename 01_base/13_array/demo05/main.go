@@ -16,8 +16,10 @@ func main() {
 	array2 := array1
 	fmt.Printf("类型:%T, 地址:%p, 值:%v\n", array1, &array1, array1)
 	fmt.Printf("类型:%T, 地址:%p, 值:%v\n", array2, &array2, array2)
+	fmt.Printf("array1地址和array2地址是否一致，结果:%t\n", &array1 == &array2)
 
 	array1[0] = 100 // 修改array1数组的第一个元素
 	fmt.Printf("array1的值:%v\n", array1)
 	fmt.Printf("array2的值:%v\n", array2)
+	fmt.Printf("array1地址和array2地址是否一致，结果:%t\n", &array1 == &array2)
 }
