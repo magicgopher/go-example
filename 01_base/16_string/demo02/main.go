@@ -89,4 +89,33 @@ func main() {
 	fmt.Println(strings.Trim(str12, "!@#")) // 输出：hello world
 	str13 := "/home/user/"
 	fmt.Println(strings.Trim(str13, "/")) // 输出：home/user
+
+	fmt.Println("==========")
+
+	// strings.ToLower()：将字符串中的所有 Unicode 字符转换为小写。 它返回一个新的字符串，原始字符串不会被修改。
+	// 参数：要转换为小写的字符串。
+	// 返回值：转换后的字符串，其中所有 Unicode 字符都已转换为小写。
+	fmt.Println(strings.ToLower("HELLO"))
+
+	fmt.Println("==========")
+
+	// strings.ToUpper()：将字符串中的所有 Unicode 字符转换为大写。 它返回一个新的字符串，原始字符串不会被修改。
+	// 参数：要转换为大写的字符串。
+	// 返回值：转换后的字符串，其中所有 Unicode 字符都已转换为大写。
+	fmt.Println(strings.ToUpper("go,java,python"))
+
+	fmt.Println("==========")
+
+	/*
+		截取子串：
+		substring(start,end)-->substr
+		str[start:end]-->substr
+			包含start，不包含end下标
+	*/
+	str14 := "pytorch and python"
+	fmt.Println(str14)
+	subStr1 := str14[:4] // 从索引0开始截取到索引4（不包含索引4的字符）
+	fmt.Println(subStr1)
+	subStr2 := str14[5:] // 从索引5开始截取到最后的索引
+	fmt.Println(subStr2)
 }
